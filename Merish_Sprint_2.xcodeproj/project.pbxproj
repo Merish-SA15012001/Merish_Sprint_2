@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A5E0A1228DAF1B90094B5D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E0A1128DAF1B90094B5D4 /* AppDelegate.swift */; };
+		1A5E0A1428DAF1B90094B5D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E0A1328DAF1B90094B5D4 /* SceneDelegate.swift */; };
+		1A5E0A1628DAF1B90094B5D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E0A1528DAF1B90094B5D4 /* ViewController.swift */; };
+		1A5E0A1928DAF1B90094B5D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5E0A1728DAF1B90094B5D4 /* Main.storyboard */; };
+		1A5E0A1C28DAF1B90094B5D4 /* Merish_Sprint_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E0A1A28DAF1B90094B5D4 /* Merish_Sprint_2.xcdatamodeld */; };
+		1A5E0A1E28DAF1BA0094B5D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A5E0A1D28DAF1BA0094B5D4 /* Assets.xcassets */; };
+		1A5E0A2128DAF1BA0094B5D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5E0A1F28DAF1BA0094B5D4 /* LaunchScreen.storyboard */; };
+		1A5E0A2C28DAF1BA0094B5D4 /* Merish_Sprint_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E0A2B28DAF1BA0094B5D4 /* Merish_Sprint_2Tests.swift */; };
+		1A5E0A3628DAF1BA0094B5D4 /* Merish_Sprint_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E0A3528DAF1BA0094B5D4 /* Merish_Sprint_2UITests.swift */; };
+		1A5E0A3828DAF1BA0094B5D4 /* Merish_Sprint_2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E0A3728DAF1BA0094B5D4 /* Merish_Sprint_2UITestsLaunchTests.swift */; };
+		1A5E0A4928DC2EB40094B5D4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E0A4828DC2EB40094B5D4 /* SignUpViewController.swift */; };
+		1A5E0A4D28DC40700094B5D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A5E0A4C28DC40700094B5D4 /* GoogleService-Info.plist */; };
+		1A5E0A4F28DDBF280094B5D4 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E0A4E28DDBF280094B5D4 /* TabViewController.swift */; };
+		1A5E0A5528DF43EC0094B5D4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E0A5428DF43EC0094B5D4 /* MapViewController.swift */; };
+		1A5E0AD628E0983D0094B5D4 /* LocalNotifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5E0AD528E0983D0094B5D4 /* LocalNotifyViewController.swift */; };
+		1AFC005B28E188CC009F480E /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC005A28E188CC009F480E /* CategoryViewController.swift */; };
+		1AFC006828E1D548009F480E /* NotificationFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC006528E1D52C009F480E /* NotificationFramework.framework */; };
+		1AFC006928E1D548009F480E /* NotificationFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFC006528E1D52C009F480E /* NotificationFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AFC006D28E2B3F9009F480E /* AddtoCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC006C28E2B3F9009F480E /* AddtoCartViewController.swift */; };
+		1AFC006F28E2CD49009F480E /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC006E28E2CD49009F480E /* CartViewController.swift */; };
+		1AFC007628E31B5F009F480E /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC007528E31B5F009F480E /* Login.swift */; };
+		1AFC007828E3200E009F480E /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC007728E3200E009F480E /* SignUp.swift */; };
+		1AFC007A28E3296D009F480E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC007928E3296D009F480E /* Category.swift */; };
+		1AFC007E28E32DE2009F480E /* cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC007D28E32DE2009F480E /* cart.swift */; };
+		1AFC008028E33114009F480E /* AddtoCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC007F28E33114009F480E /* AddtoCart.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A5E0A2828DAF1BA0094B5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A5E0A0628DAF1B90094B5D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A5E0A0D28DAF1B90094B5D4;
+			remoteInfo = Merish_Sprint_2;
+		};
+		1A5E0A3228DAF1BA0094B5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A5E0A0628DAF1B90094B5D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A5E0A0D28DAF1B90094B5D4;
+			remoteInfo = Merish_Sprint_2;
+		};
+		1AFC006428E1D52C009F480E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AFC005F28E1D52C009F480E /* NotificationFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A5E0A6128DF50E20094B5D4;
+			remoteInfo = NotificationFramework;
+		};
+		1AFC006628E1D52C009F480E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AFC005F28E1D52C009F480E /* NotificationFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A5E0A6B28DF50E20094B5D4;
+			remoteInfo = NotificationFrameworkTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A5E0AC528E092090094B5D4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1AFC006928E1D548009F480E /* NotificationFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		14CF1B4931CD61E5C1DF12FB /* Pods-Merish_Sprint_2-Merish_Sprint_2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merish_Sprint_2-Merish_Sprint_2UITests.release.xcconfig"; path = "Target Support Files/Pods-Merish_Sprint_2-Merish_Sprint_2UITests/Pods-Merish_Sprint_2-Merish_Sprint_2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		1A5E0A0E28DAF1B90094B5D4 /* Merish_Sprint_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Merish_Sprint_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A5E0A1128DAF1B90094B5D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A5E0A1328DAF1B90094B5D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1A5E0A1528DAF1B90094B5D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A5E0A1828DAF1B90094B5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A5E0A1B28DAF1B90094B5D4 /* Merish_Sprint_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Merish_Sprint_2.xcdatamodel; sourceTree = "<group>"; };
+		1A5E0A1D28DAF1BA0094B5D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A5E0A2028DAF1BA0094B5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A5E0A2228DAF1BA0094B5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A5E0A2728DAF1BA0094B5D4 /* Merish_Sprint_2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Merish_Sprint_2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A5E0A2B28DAF1BA0094B5D4 /* Merish_Sprint_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merish_Sprint_2Tests.swift; sourceTree = "<group>"; };
+		1A5E0A3128DAF1BA0094B5D4 /* Merish_Sprint_2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Merish_Sprint_2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A5E0A3528DAF1BA0094B5D4 /* Merish_Sprint_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merish_Sprint_2UITests.swift; sourceTree = "<group>"; };
+		1A5E0A3728DAF1BA0094B5D4 /* Merish_Sprint_2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merish_Sprint_2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1A5E0A4828DC2EB40094B5D4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1A5E0A4C28DC40700094B5D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1A5E0A4E28DDBF280094B5D4 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		1A5E0A5428DF43EC0094B5D4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1A5E0AD528E0983D0094B5D4 /* LocalNotifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotifyViewController.swift; sourceTree = "<group>"; };
+		1AFC005A28E188CC009F480E /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		1AFC005E28E1D501009F480E /* NotificationFramework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NotificationFramework; path = ../../NotificationFramework; sourceTree = "<group>"; };
+		1AFC005F28E1D52C009F480E /* NotificationFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NotificationFramework.xcodeproj; path = ../../NotificationFramework/NotificationFramework.xcodeproj; sourceTree = "<group>"; };
+		1AFC006C28E2B3F9009F480E /* AddtoCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddtoCartViewController.swift; sourceTree = "<group>"; };
+		1AFC006E28E2CD49009F480E /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		1AFC007528E31B5F009F480E /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		1AFC007728E3200E009F480E /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		1AFC007928E3296D009F480E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		1AFC007D28E32DE2009F480E /* cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cart.swift; sourceTree = "<group>"; };
+		1AFC007F28E33114009F480E /* AddtoCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddtoCart.swift; sourceTree = "<group>"; };
+		3B16BFE387713D0D0336BE18 /* Pods-Merish_Sprint_2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merish_Sprint_2Tests.release.xcconfig"; path = "Target Support Files/Pods-Merish_Sprint_2Tests/Pods-Merish_Sprint_2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AD35D19209C30035B0D08FCE /* Pods-Merish_Sprint_2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merish_Sprint_2.release.xcconfig"; path = "Target Support Files/Pods-Merish_Sprint_2/Pods-Merish_Sprint_2.release.xcconfig"; sourceTree = "<group>"; };
+		D1EF62AC04328DF3EF729205 /* Pods-Merish_Sprint_2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merish_Sprint_2Tests.debug.xcconfig"; path = "Target Support Files/Pods-Merish_Sprint_2Tests/Pods-Merish_Sprint_2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED507B20F06AE612D5636B09 /* Pods-Merish_Sprint_2-Merish_Sprint_2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merish_Sprint_2-Merish_Sprint_2UITests.debug.xcconfig"; path = "Target Support Files/Pods-Merish_Sprint_2-Merish_Sprint_2UITests/Pods-Merish_Sprint_2-Merish_Sprint_2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDFEA34C73948A950CBBD8FC /* Pods-Merish_Sprint_2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merish_Sprint_2.debug.xcconfig"; path = "Target Support Files/Pods-Merish_Sprint_2/Pods-Merish_Sprint_2.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A5E0A0B28DAF1B90094B5D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AFC006828E1D548009F480E /* NotificationFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A5E0A2428DAF1BA0094B5D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A5E0A2E28DAF1BA0094B5D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E3807B46F85CA0A95A9143D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDFEA34C73948A950CBBD8FC /* Pods-Merish_Sprint_2.debug.xcconfig */,
+				AD35D19209C30035B0D08FCE /* Pods-Merish_Sprint_2.release.xcconfig */,
+				ED507B20F06AE612D5636B09 /* Pods-Merish_Sprint_2-Merish_Sprint_2UITests.debug.xcconfig */,
+				14CF1B4931CD61E5C1DF12FB /* Pods-Merish_Sprint_2-Merish_Sprint_2UITests.release.xcconfig */,
+				D1EF62AC04328DF3EF729205 /* Pods-Merish_Sprint_2Tests.debug.xcconfig */,
+				3B16BFE387713D0D0336BE18 /* Pods-Merish_Sprint_2Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1A5E0A0528DAF1B90094B5D4 = {
+			isa = PBXGroup;
+			children = (
+				1AFC005F28E1D52C009F480E /* NotificationFramework.xcodeproj */,
+				1A5E0A1028DAF1B90094B5D4 /* Merish_Sprint_2 */,
+				1A5E0A2A28DAF1BA0094B5D4 /* Merish_Sprint_2Tests */,
+				1A5E0A3428DAF1BA0094B5D4 /* Merish_Sprint_2UITests */,
+				1A5E0A0F28DAF1B90094B5D4 /* Products */,
+				0E3807B46F85CA0A95A9143D /* Pods */,
+				1AFC001328E17F8D009F480E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1A5E0A0F28DAF1B90094B5D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A5E0A0E28DAF1B90094B5D4 /* Merish_Sprint_2.app */,
+				1A5E0A2728DAF1BA0094B5D4 /* Merish_Sprint_2Tests.xctest */,
+				1A5E0A3128DAF1BA0094B5D4 /* Merish_Sprint_2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A5E0A1028DAF1B90094B5D4 /* Merish_Sprint_2 */ = {
+			isa = PBXGroup;
+			children = (
+				1A5E0A1128DAF1B90094B5D4 /* AppDelegate.swift */,
+				1A5E0A1328DAF1B90094B5D4 /* SceneDelegate.swift */,
+				1A5E0A1528DAF1B90094B5D4 /* ViewController.swift */,
+				1A5E0A4828DC2EB40094B5D4 /* SignUpViewController.swift */,
+				1AFC005A28E188CC009F480E /* CategoryViewController.swift */,
+				1A5E0AD528E0983D0094B5D4 /* LocalNotifyViewController.swift */,
+				1A5E0A5428DF43EC0094B5D4 /* MapViewController.swift */,
+				1A5E0A4E28DDBF280094B5D4 /* TabViewController.swift */,
+				1AFC006E28E2CD49009F480E /* CartViewController.swift */,
+				1AFC006C28E2B3F9009F480E /* AddtoCartViewController.swift */,
+				1A5E0A1728DAF1B90094B5D4 /* Main.storyboard */,
+				1A5E0A1D28DAF1BA0094B5D4 /* Assets.xcassets */,
+				1A5E0A1F28DAF1BA0094B5D4 /* LaunchScreen.storyboard */,
+				1A5E0A2228DAF1BA0094B5D4 /* Info.plist */,
+				1A5E0A4C28DC40700094B5D4 /* GoogleService-Info.plist */,
+				1A5E0A1A28DAF1B90094B5D4 /* Merish_Sprint_2.xcdatamodeld */,
+			);
+			path = Merish_Sprint_2;
+			sourceTree = "<group>";
+		};
+		1A5E0A2A28DAF1BA0094B5D4 /* Merish_Sprint_2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1A5E0A2B28DAF1BA0094B5D4 /* Merish_Sprint_2Tests.swift */,
+				1AFC007528E31B5F009F480E /* Login.swift */,
+				1AFC007728E3200E009F480E /* SignUp.swift */,
+				1AFC007928E3296D009F480E /* Category.swift */,
+				1AFC007F28E33114009F480E /* AddtoCart.swift */,
+				1AFC007D28E32DE2009F480E /* cart.swift */,
+			);
+			path = Merish_Sprint_2Tests;
+			sourceTree = "<group>";
+		};
+		1A5E0A3428DAF1BA0094B5D4 /* Merish_Sprint_2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				1A5E0A3528DAF1BA0094B5D4 /* Merish_Sprint_2UITests.swift */,
+				1A5E0A3728DAF1BA0094B5D4 /* Merish_Sprint_2UITestsLaunchTests.swift */,
+			);
+			path = Merish_Sprint_2UITests;
+			sourceTree = "<group>";
+		};
+		1AFC001328E17F8D009F480E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AFC005E28E1D501009F480E /* NotificationFramework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AFC006028E1D52C009F480E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AFC006528E1D52C009F480E /* NotificationFramework.framework */,
+				1AFC006728E1D52C009F480E /* NotificationFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A5E0A0D28DAF1B90094B5D4 /* Merish_Sprint_2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A5E0A3B28DAF1BA0094B5D4 /* Build configuration list for PBXNativeTarget "Merish_Sprint_2" */;
+			buildPhases = (
+				EB56384867927B68EB74B861 /* [CP] Check Pods Manifest.lock */,
+				1A5E0A0A28DAF1B90094B5D4 /* Sources */,
+				1A5E0A0B28DAF1B90094B5D4 /* Frameworks */,
+				1A5E0A0C28DAF1B90094B5D4 /* Resources */,
+				89FFE13698455F825B10ADBB /* [CP] Embed Pods Frameworks */,
+				1A5E0AC528E092090094B5D4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Merish_Sprint_2;
+			productName = Merish_Sprint_2;
+			productReference = 1A5E0A0E28DAF1B90094B5D4 /* Merish_Sprint_2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A5E0A2628DAF1BA0094B5D4 /* Merish_Sprint_2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A5E0A3E28DAF1BA0094B5D4 /* Build configuration list for PBXNativeTarget "Merish_Sprint_2Tests" */;
+			buildPhases = (
+				1A6E60C1AE9D9D000B976DC9 /* [CP] Check Pods Manifest.lock */,
+				1A5E0A2328DAF1BA0094B5D4 /* Sources */,
+				1A5E0A2428DAF1BA0094B5D4 /* Frameworks */,
+				1A5E0A2528DAF1BA0094B5D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A5E0A2928DAF1BA0094B5D4 /* PBXTargetDependency */,
+			);
+			name = Merish_Sprint_2Tests;
+			productName = Merish_Sprint_2Tests;
+			productReference = 1A5E0A2728DAF1BA0094B5D4 /* Merish_Sprint_2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1A5E0A3028DAF1BA0094B5D4 /* Merish_Sprint_2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A5E0A4128DAF1BA0094B5D4 /* Build configuration list for PBXNativeTarget "Merish_Sprint_2UITests" */;
+			buildPhases = (
+				9AC8F7D16214E15E96FDB066 /* [CP] Check Pods Manifest.lock */,
+				1A5E0A2D28DAF1BA0094B5D4 /* Sources */,
+				1A5E0A2E28DAF1BA0094B5D4 /* Frameworks */,
+				1A5E0A2F28DAF1BA0094B5D4 /* Resources */,
+				F16A26695E9B2049FB690B07 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A5E0A3328DAF1BA0094B5D4 /* PBXTargetDependency */,
+			);
+			name = Merish_Sprint_2UITests;
+			productName = Merish_Sprint_2UITests;
+			productReference = 1A5E0A3128DAF1BA0094B5D4 /* Merish_Sprint_2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A5E0A0628DAF1B90094B5D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					1A5E0A0D28DAF1B90094B5D4 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					1A5E0A2628DAF1BA0094B5D4 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1A5E0A0D28DAF1B90094B5D4;
+					};
+					1A5E0A3028DAF1BA0094B5D4 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1A5E0A0D28DAF1B90094B5D4;
+					};
+				};
+			};
+			buildConfigurationList = 1A5E0A0928DAF1B90094B5D4 /* Build configuration list for PBXProject "Merish_Sprint_2" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A5E0A0528DAF1B90094B5D4;
+			productRefGroup = 1A5E0A0F28DAF1B90094B5D4 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1AFC006028E1D52C009F480E /* Products */;
+					ProjectRef = 1AFC005F28E1D52C009F480E /* NotificationFramework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1A5E0A0D28DAF1B90094B5D4 /* Merish_Sprint_2 */,
+				1A5E0A2628DAF1BA0094B5D4 /* Merish_Sprint_2Tests */,
+				1A5E0A3028DAF1BA0094B5D4 /* Merish_Sprint_2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1AFC006528E1D52C009F480E /* NotificationFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NotificationFramework.framework;
+			remoteRef = 1AFC006428E1D52C009F480E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AFC006728E1D52C009F480E /* NotificationFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NotificationFrameworkTests.xctest;
+			remoteRef = 1AFC006628E1D52C009F480E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A5E0A0C28DAF1B90094B5D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5E0A2128DAF1BA0094B5D4 /* LaunchScreen.storyboard in Resources */,
+				1A5E0A4D28DC40700094B5D4 /* GoogleService-Info.plist in Resources */,
+				1A5E0A1E28DAF1BA0094B5D4 /* Assets.xcassets in Resources */,
+				1A5E0A1928DAF1B90094B5D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A5E0A2528DAF1BA0094B5D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A5E0A2F28DAF1BA0094B5D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A6E60C1AE9D9D000B976DC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Merish_Sprint_2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89FFE13698455F825B10ADBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merish_Sprint_2/Pods-Merish_Sprint_2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merish_Sprint_2/Pods-Merish_Sprint_2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Merish_Sprint_2/Pods-Merish_Sprint_2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AC8F7D16214E15E96FDB066 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Merish_Sprint_2-Merish_Sprint_2UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB56384867927B68EB74B861 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Merish_Sprint_2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F16A26695E9B2049FB690B07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merish_Sprint_2-Merish_Sprint_2UITests/Pods-Merish_Sprint_2-Merish_Sprint_2UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merish_Sprint_2-Merish_Sprint_2UITests/Pods-Merish_Sprint_2-Merish_Sprint_2UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Merish_Sprint_2-Merish_Sprint_2UITests/Pods-Merish_Sprint_2-Merish_Sprint_2UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A5E0A0A28DAF1B90094B5D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5E0A1C28DAF1B90094B5D4 /* Merish_Sprint_2.xcdatamodeld in Sources */,
+				1A5E0A1628DAF1B90094B5D4 /* ViewController.swift in Sources */,
+				1A5E0A1228DAF1B90094B5D4 /* AppDelegate.swift in Sources */,
+				1AFC006D28E2B3F9009F480E /* AddtoCartViewController.swift in Sources */,
+				1A5E0A5528DF43EC0094B5D4 /* MapViewController.swift in Sources */,
+				1A5E0A1428DAF1B90094B5D4 /* SceneDelegate.swift in Sources */,
+				1A5E0A4F28DDBF280094B5D4 /* TabViewController.swift in Sources */,
+				1AFC006F28E2CD49009F480E /* CartViewController.swift in Sources */,
+				1A5E0A4928DC2EB40094B5D4 /* SignUpViewController.swift in Sources */,
+				1AFC005B28E188CC009F480E /* CategoryViewController.swift in Sources */,
+				1A5E0AD628E0983D0094B5D4 /* LocalNotifyViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A5E0A2328DAF1BA0094B5D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5E0A2C28DAF1BA0094B5D4 /* Merish_Sprint_2Tests.swift in Sources */,
+				1AFC007828E3200E009F480E /* SignUp.swift in Sources */,
+				1AFC008028E33114009F480E /* AddtoCart.swift in Sources */,
+				1AFC007628E31B5F009F480E /* Login.swift in Sources */,
+				1AFC007E28E32DE2009F480E /* cart.swift in Sources */,
+				1AFC007A28E3296D009F480E /* Category.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A5E0A2D28DAF1BA0094B5D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5E0A3628DAF1BA0094B5D4 /* Merish_Sprint_2UITests.swift in Sources */,
+				1A5E0A3828DAF1BA0094B5D4 /* Merish_Sprint_2UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A5E0A2928DAF1BA0094B5D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A5E0A0D28DAF1B90094B5D4 /* Merish_Sprint_2 */;
+			targetProxy = 1A5E0A2828DAF1BA0094B5D4 /* PBXContainerItemProxy */;
+		};
+		1A5E0A3328DAF1BA0094B5D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A5E0A0D28DAF1B90094B5D4 /* Merish_Sprint_2 */;
+			targetProxy = 1A5E0A3228DAF1BA0094B5D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A5E0A1728DAF1B90094B5D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A5E0A1828DAF1B90094B5D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A5E0A1F28DAF1BA0094B5D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A5E0A2028DAF1BA0094B5D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A5E0A3928DAF1BA0094B5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A5E0A3A28DAF1BA0094B5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A5E0A3C28DAF1BA0094B5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDFEA34C73948A950CBBD8FC /* Pods-Merish_Sprint_2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Merish_Sprint_2/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "please give permission";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.capgemini.Merish-Sprint-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A5E0A3D28DAF1BA0094B5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD35D19209C30035B0D08FCE /* Pods-Merish_Sprint_2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Merish_Sprint_2/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "please give permission";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.capgemini.Merish-Sprint-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A5E0A3F28DAF1BA0094B5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1EF62AC04328DF3EF729205 /* Pods-Merish_Sprint_2Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.capgemini.Merish-Sprint-2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Merish_Sprint_2.app/Merish_Sprint_2";
+			};
+			name = Debug;
+		};
+		1A5E0A4028DAF1BA0094B5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B16BFE387713D0D0336BE18 /* Pods-Merish_Sprint_2Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.capgemini.Merish-Sprint-2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Merish_Sprint_2.app/Merish_Sprint_2";
+			};
+			name = Release;
+		};
+		1A5E0A4228DAF1BA0094B5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED507B20F06AE612D5636B09 /* Pods-Merish_Sprint_2-Merish_Sprint_2UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.capgemini.Merish-Sprint-2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Merish_Sprint_2;
+			};
+			name = Debug;
+		};
+		1A5E0A4328DAF1BA0094B5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14CF1B4931CD61E5C1DF12FB /* Pods-Merish_Sprint_2-Merish_Sprint_2UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.capgemini.Merish-Sprint-2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Merish_Sprint_2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A5E0A0928DAF1B90094B5D4 /* Build configuration list for PBXProject "Merish_Sprint_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A5E0A3928DAF1BA0094B5D4 /* Debug */,
+				1A5E0A3A28DAF1BA0094B5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A5E0A3B28DAF1BA0094B5D4 /* Build configuration list for PBXNativeTarget "Merish_Sprint_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A5E0A3C28DAF1BA0094B5D4 /* Debug */,
+				1A5E0A3D28DAF1BA0094B5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A5E0A3E28DAF1BA0094B5D4 /* Build configuration list for PBXNativeTarget "Merish_Sprint_2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A5E0A3F28DAF1BA0094B5D4 /* Debug */,
+				1A5E0A4028DAF1BA0094B5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A5E0A4128DAF1BA0094B5D4 /* Build configuration list for PBXNativeTarget "Merish_Sprint_2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A5E0A4228DAF1BA0094B5D4 /* Debug */,
+				1A5E0A4328DAF1BA0094B5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A5E0A1A28DAF1B90094B5D4 /* Merish_Sprint_2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1A5E0A1B28DAF1B90094B5D4 /* Merish_Sprint_2.xcdatamodel */,
+			);
+			currentVersion = 1A5E0A1B28DAF1B90094B5D4 /* Merish_Sprint_2.xcdatamodel */;
+			path = Merish_Sprint_2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1A5E0A0628DAF1B90094B5D4 /* Project object */;
+}
