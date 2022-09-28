@@ -55,7 +55,9 @@ class AddtoCartViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     @objc func ClickonCart(_ sender: UITapGestureRecognizer){
-        
+        if sender.state == .ended{
+            print("image tapped")
+        }
         if duplicateEntry(itemtitle: differentItem[sender.view!.tag].itemtitle){
             let _: NSFetchRequest<AddtoCart> = AddtoCart.fetchRequest()
             do{
