@@ -20,7 +20,7 @@ class LocalNotifyViewController: UIViewController {
     
 
     @IBAction func notifybtn(_ sender: Any) {
-        
+        //call function from framework
         let notify = NotificationViewController()
         notify.replyNotification()
         notify.notification()

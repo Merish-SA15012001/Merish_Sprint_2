@@ -77,5 +77,8 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.cartcheckoutimage.addGestureRecognizer(tapGesture)
         return cell
     }
-     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cartvc = storyboard?.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
+        self.navigationController?.pushViewController(cartvc, animated: true)
+}
 }
